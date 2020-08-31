@@ -547,114 +547,6 @@ body .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
 }
 /**/
 
-/* Slider */
-.slick-slider {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-.slick-list:focus {
-    outline: none;
-}
-
-.slick-list.dragging {
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.slick-track:before,
-.slick-track:after {
-    display: table;
-    content: '';
-}
-
-.slick-track:after {
-    clear: both;
-}
-
-.slick-loading .slick-track {
-    visibility: hidden;
-}
-
-.slick-slide {
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}
-
-[dir='rtl'] .slick-slide {
-    float: right;
-}
-
-.slick-slide img {
-    display: block;
-}
-
-.slick-slide.slick-loading img {
-    display: none;
-}
-
-.slick-slide.dragging img {
-    pointer-events: none;
-}
-
-.slick-initialized .slick-slide {
-    display: block;
-}
-
-.slick-loading .slick-slide {
-    visibility: hidden;
-}
-
-.slick-vertical .slick-slide {
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-    display: none;
-}
-
-/**/
-
 html,
 body {
     height: 100%;
@@ -1612,13 +1504,14 @@ table td {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    width: 795px;
+    width: 700px;
     height: 260px;
     font-weight: bold;
     font-size: 47px;
     line-height: 1;
     text-transform: uppercase;
-    background: url(../img/inner-title-bg.png) center 0 no-repeat;
+    text-shadow: 0px 3px 8px #023F85;
+    background: url(../img/inner-title-bg.png) center no-repeat;
     background-size: contain;
     margin: auto;
 }
@@ -1939,26 +1832,7 @@ table td {
 }
 
 .main-page {
-    padding-top: 350px;
-}
-
-.gift {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.gift1 {
-    width: 106px;
-    top: 950px;
-    right: 1000px;
-}
-
-.gift2 {
-    width: 106px;
-    top: 1450px;
-    left: 1100px;
+    padding-top: 400px;
 }
 
 .kv {
@@ -1987,7 +1861,7 @@ table td {
     justify-content: space-between;
     max-width: 890px;
     width: 100%;
-    margin: 0 auto 45px;
+    margin: 0 auto 20px;
 }
 
 .step {
@@ -1996,7 +1870,7 @@ table td {
 }
 
 .step1 {
-    width: 632px;
+    width: 883px;
     height: 101px;
     background: url(../img/step1-bg.svg) center no-repeat;
     background-size: contain;
@@ -2004,25 +1878,17 @@ table td {
 }
 
 .step2 {
-    width: 224px;
+    width: 426px;
     height: 105px;
     background: url(../img/step2-bg.svg) center no-repeat;
     background-size: contain;
     margin-bottom: 20px;
-    padding-top: 20px;
 }
 
 .step3 {
-    width: 356px;
+    width: 438px;
     height: 105px;
     background: url(../img/step3-bg.svg) center no-repeat;
-    background-size: contain;
-}
-
-.step4 {
-    width: 488px;
-    height: 105px;
-    background: url(../img/step4-bg.svg) center no-repeat;
     background-size: contain;
 }
 
@@ -2041,10 +1907,6 @@ table td {
     background-size: contain;
 }
 
-.step2 .step-num {
-    top: 20px;
-}
-
 .step-title {
     font-weight: bold;
     font-size: 36px;
@@ -2057,43 +1919,58 @@ table td {
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #27629E;
+    color: #fff;
 }
 
 .step1 .step-text {
-    max-width: 210px;
+    max-width: 290px;
 }
 
 .step1 .step-img {
     position: absolute;
-    top: -45px;
-    right: -10px;
-    width: 392px;
+    top: -58px;
+    right: 50px;
+    width: 431px;
 }
 
-.step3 .step-img {
+.step2 .step-img {
     position: absolute;
-    width: 120px;
-    top: -12px;
-    right: 25px;
+    width: 113px;
+    top: 8px;
+    right: 80px;
 }
 
-.step3 .step-title {
-    line-height: 33px;
+.step3 .weekly {
+    max-width: 145px;
+    width: 100%;
 }
 
-.step-text1 {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-    text-transform: uppercase;
+.shops {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 106px;
+    background: #023F85;
+    margin-top: 30px;
 }
 
-.step-text2 {
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 21px;
-    text-transform: uppercase;
+.shop {
+    margin: 0 40px;
+    width: 100%;
+}
+
+.mariara {
+    max-width: 195px;
+}
+
+.monetka {
+    max-width: 173px;
+    margin-bottom: 15px;
+}
+
+.spar {
+    max-width: 167px;
 }
 
 .main-prize-title {
@@ -2101,32 +1978,72 @@ table td {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    width: 618px;
-    height: 276px;
+    width: 475px;
+    height: 120px;
     font-weight: bold;
     font-size: 56px;
     line-height: 1;
     text-transform: uppercase;
-    background: url(../img/main-title-bg.png) center 4px no-repeat;
+    text-shadow: 0px 3px 8px #023F85;
+    background: url(../img/main-title-bg.png) center no-repeat;
     background-size: contain;
-    margin: auto;
-    padding-left: 20px;
+    margin: 50px auto;
 }
 
 .prizes-block {
     display: flex;
-    justify-content: space-between;
-    max-width: 890px;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
     width: 100%;
     margin: 0 auto 90px;
 }
 
 .prizes {
+    position: relative;
     padding: 44px;
 }
 
+.gift {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.gift1 {
+    width: 151px;
+    top: 42px;
+    left: -600px;
+}
+
+.gift2 {
+    width: 164px;
+    top: -50px;
+    left: 600px;
+}
+
+.gift3 {
+    width: 88px;
+    bottom: -20px;
+    left: -800px;
+}
+
+.gift4 {
+    width: 151px;
+    bottom: 0;
+    left: 800px;
+}
+
+.prize-row {
+    display: flex;
+    justify-content: center;
+}
+
 .garant-prizes {
-    width: 429px;
+    width: 900px;
     height: 223px;
     background: url(../img/garant-prizes-bg.svg) center no-repeat;
     background-size: contain;
@@ -2134,19 +2051,9 @@ table td {
 }
 
 .weekly-prizes {
-    width: 429px;
-    height: 355px;
+    width: 900px;
+    height: 375px;
     background: url(../img/weekly-prizes-bg.svg) center no-repeat;
-    background-size: contain;
-}
-
-.daily-prizes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 429px;
-    height: 595px;
-    background: url(../img/daily-prizes-bg.svg) center no-repeat;
     background-size: contain;
 }
 
@@ -2154,14 +2061,21 @@ table td {
     display: flex;
     -ms-align-items: center;
     align-items: center;
+    margin: 15px 30px;
 }
 
-.daily-prizes .prize-wrapper:nth-child(3) {
-    margin: 40px 0;
+.garant-prizes .prize-wrapper {
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .prize-name-wrapper {
     margin-left: 15px;
+}
+
+.weekly-prizes .prize-name-wrapper {
+    margin-bottom: 10px;
 }
 
 .prizes-title {
@@ -2170,15 +2084,11 @@ table td {
     line-height: 1;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .prize-img {
-    width: 141px;
-    height: 130px;
-}
-
-.weekly-prizes .prize-wrapper:nth-child(2) .prize-img {
-    height: 120px;
+    width: 139px;
 }
 
 .prize-name {
@@ -2186,14 +2096,14 @@ table td {
     font-size: 20px;
     line-height: 21px;
     text-transform: uppercase;
-    color: #27629E;
+    color: #fff;
 }
 
 .prize-text {
     font-weight: bold;
     font-size: 20px;
     line-height: 21px;
-    color: #27629E;
+    color: #fff;
 }
 
 .main-shops-logos {
@@ -2251,32 +2161,6 @@ table td {
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto 45px;
-}
-
-.main-cookie-h1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -150px;
-    bottom: 0;
-    width: 213px;
-    height: 196px;
-    margin: auto;
-    background: url(../img/cookie-title-left.png) center no-repeat;
-    background-size: contain;
-}
-
-.main-cookie-h1::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -200px;
-    bottom: 0;
-    width: 246px;
-    height: 245px;
-    margin: auto;
-    background: url(../img/cookie-title-right.png) center no-repeat;
-    background-size: contain;
 }
 
 .cookie-page p {
@@ -2355,10 +2239,6 @@ table td {
     .kv {
         max-width: 1000px;
     }
-
-    .gift2 {
-        display: none;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -2410,7 +2290,7 @@ table td {
         width: 100vw;
         height: 100vh;
         transition: all .2s linear;
-        background: #6DC7E4;
+        background: #46B8DD;
         padding: 35px 15px;
         font-size: 30px;
         line-height: 37px;
@@ -2789,10 +2669,10 @@ table td {
 
     .kv {
         top: 50px;
-        max-width: 436px;
+        max-width: 410px;
         height: 447px;
         background: url(../img/kv-mob.png) center no-repeat;
-        background-size: 436px 447px;
+        background-size: 410px;
     }
 
     .kv-plug {
@@ -2843,16 +2723,11 @@ table td {
         height: 109px;
         background: url(../img/step3-mob.svg) center no-repeat;
         background-size: contain;
+        padding-top: 30px;
     }
 
-    .step4 {
-        height: 156px;
-        background: url(../img/step4-mob.svg) center no-repeat;
-        background-size: contain;
-        padding-top: 25px;
-    }
-
-    .step1 .step-num {
+    .step1 .step-num,
+    .step3 .step-num {
         top: 30px;
     }
 
@@ -2864,12 +2739,8 @@ table td {
         margin: auto;
     }
 
-    .step4 .step-num {
-        top: 25px;
-    }
-
-    .step4 .step-text {
-        max-width: 200px;
+    .step2 .step-img {
+        right: 15px;
     }
 
     .step-num {
@@ -2880,17 +2751,18 @@ table td {
     }
 
     .step-title {
+        font-size: 34px;
         line-height: 1;
     }
 
     .main-prize-title {
         position: absolute;
-        top: 1170px;
+        top: 1220px;
         left: -50px;
         right: -50px;
         max-width: 375px;
         width: 100%;
-        height: 223px;
+        height: 210px;
         font-size: 37px;
         background: url(../img/main-title-bg-mob.png) center -4px no-repeat;
         background-size: 375px;
@@ -2900,7 +2772,7 @@ table td {
     .prizes-block {
         position: relative;
         flex-direction: column;
-        margin: 100px auto 0;
+        margin: 140px auto 40px;
         padding: 44px 0 60px;
     }
 
@@ -2910,11 +2782,11 @@ table td {
         top: 0;
         left: -100px;
         right: -100px;
-        max-width: 429px;
+        max-width: 598px;
         height: 100%;
         margin: auto;
         background: url(../img/prizes-bg-mob.svg) center no-repeat;
-        background-size: 429px 1030px;
+        background-size: cover;
         z-index: 0;
     }
 
@@ -2930,6 +2802,43 @@ table td {
 
     .daily-prizes .prize-wrapper:nth-child(3) {
         margin: 0;
+    }
+
+    .weekly-prizes {
+        margin-bottom: 0;
+    }
+
+    .prize-row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .prize-wrapper {
+        max-width: 290px;
+        margin: 15px auto;
+    }
+
+    .prize-name-wrapper {
+        max-width: 165px;
+        width: 100%;
+    }
+
+    .prizes-title {
+        font-size: 32px;
+    }
+
+    .prize-img {
+        width: 128px;
+    }
+
+    .prize-name {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .prize-text {
+        font-size: 15px;
+        line-height: 19px;
     }
 
     .main-shops-logos {
@@ -2953,14 +2862,14 @@ table td {
         max-width: 375px;
         height: 300px;
         background: url(../img/404-mob.png) center no-repeat;
-        background-size: 375px 300px;
+        background-size: 375px;
     }
 
     .img-500 {
         max-width: 375px;
         height: 340px;
         background: url(../img/500-mob.png) center no-repeat;
-        background-size: 375px 340px;
+        background-size: 375px;
     }
 
     .main-cookie-h1 {
@@ -2996,6 +2905,16 @@ table td {
         width: 19px;
         height: 22px;
         left: -25px;
+    }
+
+    .shops {
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+        background: url(../img/shops-bg.png) center no-repeat;
+        background-size: cover;
+        height: 220px;
     }
 }
 
@@ -3034,32 +2953,25 @@ table td {
         width: 290px;
     }
 
-    .step3 .step-img {
-        width: 110px;
-        top: -5px;
-        right: 15px;
+    .step2 .step-img {
+        top: 13px;
+        width: 100px;
     }
 
-    .main-prize-title {
-        top: 1130px;
-    }
-
-    .prizes-title {
+    .step-title {
         font-size: 32px;
     }
 
-    .prize-img {
-        width: 128px;
+    .step3 .step-title {
+        font-size: 29px;
     }
 
-    .prize-name {
-        font-size: 17px;
-        line-height: 19px;
+    .step-text {
+        font-size: 16px;
     }
 
-    .prize-text {
-        font-size: 15px;
-        line-height: 19px;
+    .main-prize-title {
+        top: 1170px;
     }
 
     .main-shops-logos {
