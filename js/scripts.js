@@ -141,4 +141,8 @@ $(document).ready(function () {
         });
     }
     openAccordion();
+
+    if($(window).innerWidth() > 1000) {
+        $('.menu-btn, .btn').attr('href', 'https://edadeal.ru/');
+    }
 });
