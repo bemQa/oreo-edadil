@@ -143,6 +143,6 @@ $(document).ready(function () {
     openAccordion();
 
     if($(window).innerWidth() > 1000) {
-        $('.menu-btn, .btn').attr('href', 'https://edadeal.ru/');
+        $('.menu-btn, .btn').attr('href', 'https://edadeal.ru/moskva/cashbacks?segment=%D0%9A%D0%BE%D0%BD%D0%B4%D0%B8%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B5%20%D0%B8%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D1%8F');
     }
 });
