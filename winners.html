@@ -61,7 +61,7 @@
 					<div class="filters">
 						<div class="date-filter">
 							<div class="select">
-								<select name="theme" data-placeholder="Даты">
+								<select id="week" name="week" data-placeholder="Даты">
 									<option value=""></option>
 									<option value="1">01.09 - 07.09</option>
 									<option value="2">08.09 - 14.09</option>
@@ -70,38 +70,736 @@
 								</select>
 							</div>
 						</div>
-						<form class="input-field phone-filter">
-                    		<input type="text" name="phone" class="phone-mask" placeholder="Поиск по номеру телефона" required="">
-                    		<button class="search"></button>
-                    	</form>
 					</div>
 					<div class="table-wrapper winners-table">
 						<table>
 							<thead>
 								<tr>
 									<th class="desktop-visible">Имя</th>
-									<th class="desktop-visible">Телефон</th>
 									<th class="desktop-visible">Дата</th>
 									<th class="mobile-visible">Победитель</th>
 									<th>Приз</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td class="desktop-visible">
-										<img src="img/waiting.svg" alt="">
-									</td>
-									<td class="desktop-visible">
-										<img src="img/waiting.svg" alt="">
-									</td>
-									<td class="desktop-visible">
-										<img src="img/waiting.svg" alt="">
-									</td>
+								<tr class="week1">
+									<td class="desktop-visible">Олеся Федорова</td>
+									<td class="desktop-visible">11.09.2020</td>
 									<td class="mobile-visible">
-										<img src="img/waiting.svg" alt="">
+										<div class="winner-info">
+											<div class="winner-name">Олеся Федорова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
 									</td>
 									<td>
-										<img src="img/waiting.svg" alt="">
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ivi.png" alt="">
+											</div>
+											<span>Подписка IVI <br>на 3 месяца</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Ольга Неважно</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Ольга Неважно</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ivi.png" alt="">
+											</div>
+											<span>Подписка IVI <br>на 3 месяца</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">оксана шадрина</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">оксана шадрина</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ivi.png" alt="">
+											</div>
+											<span>Подписка IVI <br>на 3 месяца</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Muslly88</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Muslly88</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ivi.png" alt="">
+											</div>
+											<span>Подписка IVI <br>на 3 месяца</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Светлана Войчук</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Светлана Войчук</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ivi.png" alt="">
+											</div>
+											<span>Подписка IVI <br>на 3 месяца</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Светлана Ряшинцева</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Светлана Ряшинцева</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ivi.png" alt="">
+											</div>
+											<span>Подписка IVI <br>на 3 месяца</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Paulina Reunok</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Paulina Reunok</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ivi.png" alt="">
+											</div>
+											<span>Подписка IVI <br>на 3 месяца</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Ангел А</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Ангел А</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ivi.png" alt="">
+											</div>
+											<span>Подписка IVI <br>на 3 месяца</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Любовъ Захарова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Любовъ Захарова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ivi.png" alt="">
+											</div>
+											<span>Подписка IVI <br>на 3 месяца</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Екатерина Шинкарева</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Екатерина Шинкарева</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/sportmaster.png" alt="">
+											</div>
+											<span>Сертификат Спортмастер <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Лара Кайгородова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Лара Кайгородова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/sportmaster.png" alt="">
+											</div>
+											<span>Сертификат Спортмастер <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Дмитрий Барулин</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Дмитрий Барулин</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/sportmaster.png" alt="">
+											</div>
+											<span>Сертификат Спортмастер <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Галина Криль</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Галина Криль</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/sportmaster.png" alt="">
+											</div>
+											<span>Сертификат Спортмастер <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Елена Трофимова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Елена Трофимова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/sportmaster.png" alt="">
+											</div>
+											<span>Сертификат Спортмастер <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">жанна вахитова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">жанна вахитова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/sportmaster.png" alt="">
+											</div>
+											<span>Сертификат Спортмастер <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Андрей Докан</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Андрей Докан</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/sportmaster.png" alt="">
+											</div>
+											<span>Сертификат Спортмастер <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Диана Камалетдинова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Диана Камалетдинова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/sportmaster.png" alt="">
+											</div>
+											<span>Сертификат Спортмастер <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Олеся Изосимова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Олеся Изосимова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/sportmaster.png" alt="">
+											</div>
+											<span>Сертификат Спортмастер <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">iga978</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">iga978</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/lamoda.png" alt="">
+											</div>
+											<span>Сертификат Lamoda <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Анна Горбаконенко</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Анна Горбаконенко</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/lamoda.png" alt="">
+											</div>
+											<span>Сертификат Lamoda <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">костя кокотов</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">костя кокотов</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/lamoda.png" alt="">
+											</div>
+											<span>Сертификат Lamoda <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Ольга Котова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Ольга Котова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/lamoda.png" alt="">
+											</div>
+											<span>Сертификат Lamoda <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Айдар Хазиев</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Айдар Хазиев</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/lamoda.png" alt="">
+											</div>
+											<span>Сертификат Lamoda <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Георгий Сергеевич</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Георгий Сергеевич</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/lamoda.png" alt="">
+											</div>
+											<span>Сертификат Lamoda <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">наталья альгешкина</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">наталья альгешкина</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/lamoda.png" alt="">
+											</div>
+											<span>Сертификат Lamoda <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Полина Фисова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Полина Фисова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/lamoda.png" alt="">
+											</div>
+											<span>Сертификат Lamoda <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Светлана Борисова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Светлана Борисова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/lamoda.png" alt="">
+											</div>
+											<span>Сертификат Lamoda <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Гюня Шишкова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Гюня Шишкова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ozon.png" alt="">
+											</div>
+											<span>Сертификат OZON <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Глеб Чевтаев</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Глеб Чевтаев</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ozon.png" alt="">
+											</div>
+											<span>Сертификат OZON <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Vitali Gorban</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Vitali Gorban</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ozon.png" alt="">
+											</div>
+											<span>Сертификат OZON <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Роберт Райский</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Роберт Райский</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ozon.png" alt="">
+											</div>
+											<span>Сертификат OZON <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Максим Прилепин</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Максим Прилепин</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ozon.png" alt="">
+											</div>
+											<span>Сертификат OZON <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Анна V</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Анна V</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ozon.png" alt="">
+											</div>
+											<span>Сертификат OZON <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Лаура Мусаева</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Лаура Мусаева</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ozon.png" alt="">
+											</div>
+											<span>Сертификат OZON <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Екатерина Тихонова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Екатерина Тихонова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ozon.png" alt="">
+											</div>
+											<span>Сертификат OZON <br>на 1000₽</span>
+										</div>
+									</td>
+								</tr>
+								<tr class="week1">
+									<td class="desktop-visible">Дарья Горохова</td>
+									<td class="desktop-visible">11.09.2020</td>
+									<td class="mobile-visible">
+										<div class="winner-info">
+											<div class="winner-name">Дарья Горохова</div>
+											<div>
+												11.09.2020
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="win-info">
+											<div class="win-img">
+												<img src="img/prizes/ozon.png" alt="">
+											</div>
+											<span>Сертификат OZON <br>на 1000₽</span>
+										</div>
 									</td>
 								</tr>
 							</tbody>

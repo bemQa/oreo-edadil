@@ -119,6 +119,13 @@ $(document).ready(function () {
         $('.select2-results__options').scrollbar();
     });
 
+    $('#week').on('select2:select', function(){
+        var week_val = $('#week option:selected').val();
+        console.log(week_val);
+        $('.winners-table tbody tr').hide();
+        $('.winners-table tbody tr.week'+week_val).show();
+    });
+
     function openAccordion() {
         var wrap = $('.accordion-wrap');
         var accordion = wrap.find('.accordion-title');
